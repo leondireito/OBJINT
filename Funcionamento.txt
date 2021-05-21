@@ -1,0 +1,6 @@
+O sistema proposto tem como objetivo conectar sensores de temperatura e humidade com o solo que será irrigado. 
+Os dados dos sensores serão enviados para a placa ESP8266 NodeMCU – 12E  que por sua vez irá agir como orquestrador de controle dos sensores. 
+Os sensores provem os dados de atualização sobre a humidade do solo e temperatura. Os dados serão armazenados continuamente utilizando um servidor MQTT. 
+Esses dados serão transmitidos no formato de mensagens leves dos sensores até o sistema publicador, para em seguida suas informações serem adquiridas por um dispositivo subscrito, podendo ser um computador, ou até mesmo um dispositivo móvel.
+A partir dos dados das mensagens transmitidas, teremos o sistema atuador que utilizará o próprio NodeMCU para acionar o modulo de relés que reagirá aos eventos gerados pelos sensores e transmitidos pelo publicador MQTT. 
+Os eventos podem disparar a irrigação através de uma bomba de água ou uma lâmpada de aquecimento . de acordo com o status e atualizações enviado por cada sensor.

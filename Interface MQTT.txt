@@ -1,0 +1,11 @@
+Broker MQTT
+mqtt-dashboard.com
+
+SubClient
+nodemcuClient_leon
+
+TOPICOS
+lab/temp //Temperatura do AR
+lab/humid //Umidade do AR
+lab/solohum // Umidade do Solo
+lab/bomba // Status Bomba
